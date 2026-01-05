@@ -1,0 +1,104 @@
+.results-table-container {
+  width: 100%;
+}
+
+.results-table-container h2 {
+  color: #667eea;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.results-table thead {
+  background: #667eea;
+  color: white;
+}
+
+.results-table th {
+  padding: 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.95em;
+}
+
+.results-table td {
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.results-table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.filename-cell {
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+  color: #555;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.prediction-cell {
+  text-align: center;
+}
+
+.prediction-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  background: #667eea;
+  color: white;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.confidence-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.confidence-badge.high {
+  background: #c6efce;
+  color: #006100;
+}
+
+.confidence-badge.medium {
+  background: #ffeb9c;
+  color: #9c6500;
+}
+
+.confidence-badge.low {
+  background: #ffc7ce;
+  color: #9c0006;
+}
+
+.all-predictions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.prediction-item {
+  display: inline-block;
+  padding: 4px 8px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  font-size: 0.85em;
+  color: #555;
+}
